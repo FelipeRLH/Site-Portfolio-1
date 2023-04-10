@@ -1,0 +1,113 @@
+/* GERAL */
+.nav-container {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 566px;
+    padding: 15px 50px;
+    background-color: #11161686;
+    z-index: 1;
+}
+
+/* -----LOGO AREA */
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo-nav-box {
+    width: 38px;
+    height: 37px;
+    padding-top: 0.0625rem;
+    text-align: center;
+    border-radius: 4px;
+    background: var(--primary-color);
+}
+
+/* LINKS AREA */
+.links-nav ul {
+    display: flex;
+    align-items: center;
+    font-family: var(--primary-font);
+}
+
+.links-nav ul li {
+    margin-right: 24px;
+    list-style: none;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.links-nav ul li:last-child {
+    border: 1px solid var(--primary-color);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.links-nav ul a {
+    text-decoration: none;
+}
+
+.links-nav ul li:last-child:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.links-nav ul li:hover {
+    color: var(--primary-color);
+}
+
+.selected {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* CELULAR */
+@media only screen and (max-width: 500px) {
+
+    /*  ---- GERAL */
+    .nav-container {
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    /* -----LOGO AREA */
+    .logo-nav-container {
+        font-size: 20px;
+    }
+
+    /* LINKS AREA */
+    .links-nav {
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+
+
+/* Televisão */
+@media only screen and (min-width: 1600px) {
+
+    /* ----- GERAL */
+    .nav-container {
+
+        background-color: red;
+
+    }
+}

@@ -1,0 +1,128 @@
+/* GERAL */
+#sobre {
+    padding: 90px 0;
+}
+
+.container-about {
+    background-color: #1B2323;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 30px;
+}
+
+/* IMAGE */
+.image-about img {
+    width: 550px;
+    height: 410px;
+    border-radius: 43px;
+    box-shadow: 0px 0px 10px rgba(11, 70, 124, 0.2);
+}
+
+/* TEXT AREA */
+/* Title */
+.text-about h2 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+/* Text */
+.text-about p {
+    width: 420px;
+    margin-bottom: 6px;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+}
+
+/* Tecs */
+.tecs-about img {
+    width: 50px;
+    margin: 10px 15px 0 0;
+}
+
+/* ANIMATIONS VISIBILITY */
+.hidden {
+    visibility: hidden;
+}
+
+.showLeft {
+    position: relative;
+    visibility: visible;
+    left: -30em;
+    opacity: 0;
+    animation: slide-in 1s forwards;
+}
+
+
+.showRight {
+    position: relative;
+    visibility: visible;
+    left: 30em;
+    opacity: 0;
+    animation: slide-in 1s forwards;
+
+}
+
+@keyframes slide-in {
+    100% {
+        left: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+
+    /*  ---- GERAL */
+    #sobre {
+        padding: 0;
+    }
+
+    .container-about {
+        background-color: #1B2323;
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+    /* IMAGE */
+    .image-about {
+        display: none;
+    }
+
+    /* TEXT AREA */
+    .text-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-about p {
+        width: 320px;
+    }
+
+    /* Tecs */
+    .tecs-about img {
+        width: 35px;
+        margin: 10px 15px 0 0;
+    }
+
+}
+
+
+
+/* Televisão */
+@media only screen and (min-width: 1600px) {
+
+    /* ----- GERAL */
+
+}

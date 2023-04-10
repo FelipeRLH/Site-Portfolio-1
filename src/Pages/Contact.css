@@ -1,0 +1,146 @@
+/* GERAL */
+.container-contact {
+    padding: 85px 0 0 0;
+}
+
+
+.container-info-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
+    gap: 80px;
+}
+
+/* TÍTULO */
+.title-contact {
+    background-color: var(--tertiary-color);
+    padding: 30px 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.title-contact h2 {
+    font-size: 40px;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+}
+
+/* NÚMERO E EMAIL */
+.infos-contact {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+
+.infos-contact div {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.icon-contact {
+    margin-right: 20px;
+    font-size: 33px;
+    color: var(--primary-color);
+}
+
+/* FORM CONTACT */
+.form-contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-contact-area {
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    width: 119px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #353535;
+}
+
+.span-title {
+    border-bottom: 2px solid var(--primary-color);
+    width: 80px;
+}
+
+.textimput,
+.emailimput,
+textarea {
+    font-family: var(--primary-font);
+    background-color: #2B2E3C;
+    margin: 5px;
+    padding: 9px;
+    border: none;
+    border-radius: 6px;
+    color: var(--secondary-color);
+}
+
+textarea {
+    height: 175px;
+}
+
+.textimput,
+.emailimput {
+    width: 220px;
+}
+
+
+
+.form-contact .btn-form {
+    width: 110px;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    /*  ---- GERAL */
+    .container-info-form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title-contact {
+        padding: 30px 30px;
+    }
+
+    .title-contact h2 {
+        font-size: 35px;
+    }
+
+    /* FORM CONTACT */
+    .form-contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-contact form {
+        width: 280px;
+    }
+
+    .textimput,
+    .emailimput,
+    textarea {
+        margin: 5px 0;
+        padding: 9px;
+    }
+    
+    .textimput,
+    .emailimput {
+        width: 260px;
+    }
+}
+
+
+
+/* Televisão */
+@media only screen and (min-width: 1600px) {
+
+    /* ----- GERAL */
+
+}

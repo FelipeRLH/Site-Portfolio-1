@@ -1,0 +1,52 @@
+/* --------FOOTER */
+.footer_contact {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff66;
+    background-color: rgba(27, 35, 35, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    font-size: 14px;
+    padding: 5px 50px;
+    font-family: var(--secondary-font);
+}
+
+.links_contact {
+    display: flex;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.links_contact a {
+    text-decoration: none;
+    color: #ffffff66;
+}
+
+.links_contact a:hover {
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    /*  ---- GERAL */
+    .footer_contact {
+        font-size: 9px;
+        padding: 5px 5px;
+    }
+    
+    .links_contact {
+        gap: 15px;
+    }
+}
+
+
+
+/* Televisão */
+@media only screen and (min-width: 1600px) {
+
+    /* ----- GERAL */
+   
+}

@@ -1,0 +1,90 @@
+/* GERAL */
+.hamburguermenu-container {
+    display: none;
+    position: fixed;
+    right: 30px;
+}
+
+/* MENU */
+.menu {
+    position: fixed;
+    top: 68px;
+    right: -255px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(18, 23, 23);
+    box-shadow: -10px 0 10px -10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-out;
+    z-index: -1;
+}
+
+.menu.open {
+    right: 0;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--secondary-font);
+    margin-top: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    color: #fff;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.menu ul li span {
+    font-size: 25px;
+}
+
+.menu ul a {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* ANIMATION MENU */
+.animationMenu {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 30px;
+}
+
+.animationMenu:before,
+.animationMenu:after,
+.animationMenu div {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 4px;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.openIcon:before {
+    transform: translateY(6px) rotate(135deg);
+}
+
+.openIcon:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+
+.openIcon div {
+    transform: scale(0);
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+    .hamburguermenu-container {
+        display: block;
+    }
+}
